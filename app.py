@@ -7,6 +7,20 @@ from langchain.embeddings import HuggingFaceEmbeddings
 from langchain.chains import RetrievalQA
 from langchain.text_splitter import CharacterTextSplitter
 
+# 设置页面标题
+st.title("💬 冯宇洋のChatbot")
+
+# 应用介绍
+st.markdown("""
+
+这是一个基于 LangChain 框架和 DeepSeek 模型的智能对话机器人。它能够理解你的问题，并从本地知识库中检索相关信息，为你提供准确的回答。
+
+#### 主要功能：
+- **智能对话**：询问关于我的一切，理解并回答你的问题。
+
+快来试试吧！😊
+""")
+
 # 定义本地文本文件路径
 TEXT_FILE_PATH = "knowledge_base.txt"  # 替换为你的本地文本文件路径
 
